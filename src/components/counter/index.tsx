@@ -3,12 +3,12 @@ import React, { useState } from 'react'
 import {
   useAppSelector as useSelector,
   useAppDispatch as useDispatch,
-} from '../../app/hooks'
+} from '../../redux/hooks'
 import {
   decrement,
   increment,
   incrementByAmount,
-} from '../counter/counterSlice'
+} from '../../redux/features/counter/counterSlice'
 import styles from './Counter.module.css'
 
 export function Counter() {
